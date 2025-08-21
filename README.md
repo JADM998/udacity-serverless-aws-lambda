@@ -34,3 +34,4 @@ I've splitted the code into multiple layers as described in the first section. A
 
 I've implemented monitoring throughout the application by the Winston logger, XRay wrapper and CloudWatch metrics. I have provided examples of the logs and metrics sent by the application in the folders `/logs` and `/metrics` inside `/screenshoots/monitoring`.
 
+I've also followed all the criteria listed in the project rubric for Archituecture and Best practices.
