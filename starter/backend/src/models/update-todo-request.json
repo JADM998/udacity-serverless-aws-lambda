@@ -13,5 +13,10 @@
             "type": "boolean"
         }
     },
+    "anyOf":[
+        { "required": ["name"] },
+        { "required": ["dueDate"] },
+        { "required": ["done"] }
+    ],
     "additionalProperties": false
 }

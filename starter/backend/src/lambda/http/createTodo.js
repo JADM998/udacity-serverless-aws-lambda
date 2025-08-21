@@ -16,7 +16,7 @@ export async function handler(event) {
 
   logger.info('returning a 201 response')
   return createResponse({
-    body: resultTodo,
+    body: {item: resultTodo},
     status: 201
   });
 

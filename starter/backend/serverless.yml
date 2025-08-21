@@ -39,6 +39,7 @@ functions:
           path: todos
           cors: true
           authorizer: Auth
+          #No schema needed (Expect no body)
     iamRoleStatements:
       - Effect: Allow
         Action:
@@ -117,6 +118,7 @@ functions:
           path: todos/{todoId}
           cors: true
           authorizer: Auth
+          #No schema needed (Expect no body)
     iamRoleStatements:
       - Effect: Allow
         Action:
@@ -141,6 +143,7 @@ functions:
           path: todos/{todoId}/attachment
           cors: true
           authorizer: Auth
+          #No schema needed (Expect no body)
     iamRoleStatements:
       - Effect: Allow
         Action:
