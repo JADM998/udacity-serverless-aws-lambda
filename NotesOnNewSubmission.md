@@ -8,9 +8,9 @@ In this new submission I have included the following changes:
 
 Also, for the bug mentioned in the previous review:
 
-- It seems like there was a problem by how the `CreateTodo` endpoint was returning a new todoItem, it didn't contain all expected keys. Fixed it and seems like a series of bugs related to todoId being undefined when creating a new todo were gone.
+- It seems like there was a problem with how the `CreateTodo` endpoint was returning the response as it didn't contain all expected keys. Fixed it and seems like a series of bugs related to todoId being undefined were gone.
 
 Now, the expected behaviour of the page given the previous feedback:
 1. It is no longer possible to create empty Todos (Empty string todos).
-2. There is no problem trying to delete, update or upload an image of a todo.
+2. There is no problem trying to delete, update or upload an image of a newly created todo.
 3. The API is more secure and has more validations.
