@@ -24,7 +24,7 @@ export class Todos {
         await todosService.createTodo(insertedTodo);
         logger.info(`Succesfully created Todo with id ${insertedTodo.todoId}`)
 
-        return newTodo;
+        return insertedTodo;
     }
 
     async getTodos(userId) {

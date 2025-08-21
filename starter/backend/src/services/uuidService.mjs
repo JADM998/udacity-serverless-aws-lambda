@@ -1,4 +1,4 @@
-import {v4 as uuidv4} from 'uuid'
+import {v4 as uuidv4, validate, version} from 'uuid'
 
 export class UUIDService{
 
@@ -8,4 +8,7 @@ export class UUIDService{
         return uuidv4();
     }
 
+    isUUIDv4(string) {
+        return validate(string) && version(string) === 4;
+    }
 }
